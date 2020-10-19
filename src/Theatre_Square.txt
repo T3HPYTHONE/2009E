@@ -1,0 +1,14 @@
+n, m, a = list(map(int, input().split()))
+above = 0
+below = 0
+if n % a == 0:
+    above = (n // a)
+elif n % a != 0:
+    above = (n // a) + 1
+if m % a == 0:
+    below = m // a
+elif m % a != 0:
+    below = (m // a) + 1
+ 
+print(above * below)
+
